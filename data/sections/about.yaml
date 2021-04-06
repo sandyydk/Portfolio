@@ -1,0 +1,74 @@
+# section information
+section:
+  name: About
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+# your designation
+designation: Software Engineer - III
+# your company information
+company:
+  name: Walmart Labs
+  url: "https://www.walmart.com"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a passionate software engineer with 5 years of working experience. 
+Have been working on Go for over 3 years now. Built UI and APIs for a product from scratch which got acquired 
+by Cisco (Cmpute.io). Followed it up by working on a newer version of the same product across multiple clouds and launched it in Cisco (Cisco Cost Optimizer). '
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+# - name: Email
+#   icon: "fas fa-envelope"
+#   url: "example@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/sandyydk"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/sandeephbhat/"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/sandyethadka"
+
+- name: Facebook
+  icon: "fab fa-facebook"
+  url: "https://www.facebook.com/sandeep.h.bhat"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Golang
+  percentage: 95
+  color: blue
+- name: Microservices
+  percentage: 85
+  color: yellow
+- name: Cloud
+  percentage: 90
+  color: pink
+- name: Communication
+  percentage: 90
+  color: green
+- name: Fast Learner
+  percentage: 90
+  color: sky
+- name: Problem Solving
+  percentage: 80
+  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"
