@@ -14,6 +14,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+      - name: Fetching Google Analytics ID
         uses: microsoft/variable-substituition@v1
         with:
           files: 'config.yaml'
