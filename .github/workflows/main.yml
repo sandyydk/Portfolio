@@ -29,4 +29,20 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Azure Login Initialization
+        uses: azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Upload to Azure blob storage
+        uses: azure/CLI@v1
+        with: 
+          azcliversion: 2.18.0
+          inlineScript: |
+              az storage blob upload-batch --account-name sandyportfolio -d '$web' -s ./public
+
+      - name: Azure CLI Logout
+        run: |
+            az logout
+
       
