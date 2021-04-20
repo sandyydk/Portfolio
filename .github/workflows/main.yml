@@ -32,7 +32,7 @@ jobs:
       - name: Azure Login Initialization
         uses: azure/login@v1
         with:
-            credentials: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Upload to Azure blob storage
         uses: azure/CLI@v1
