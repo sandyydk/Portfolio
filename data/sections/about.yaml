@@ -6,19 +6,18 @@ section:
   showOnNavbar: true
 
 # your designation
-designation: Software Engineer - III
+designation: Senior Software Engineer
 # your company information
 company:
-  name: Walmart Labs
-  url: "https://www.walmart.com"
+  name: Harness
+  url: "https://harness.io"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with 5 years of working experience. 
-Have been working on Go for over 3 years now. Built UI and APIs for a product from scratch which got acquired 
-by Cisco (Cmpute.io). Followed it up by working on a newer version of the same product across multiple clouds and launched it in Cisco (Cisco Cost Optimizer). '
+summary: 'I am a passionate software engineer with over 6 years of experience working technologies across cloud and K8s. 
+Been part of a startup which was acquired by Cisco (Cmpute.io) as well as a team which built platform that handles traffic to the scale of several million flows per minute at Walmart supporting successful holidays across 2019-2021. '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

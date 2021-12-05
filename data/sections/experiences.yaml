@@ -10,6 +10,17 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Harness
+    url: "https://harness.io"
+    location: Bangalore
+    # company overview
+    overview: Harness is the industry’s first Software Delivery Platform to use AI to simplify your DevOps processes - CI, CD, Feature Flags, Cloud Costs, and much more.
+  positions:
+  - designation: Senior Software Engineer
+    start: December 2021
+    responsibilities:
+    - Part of Cost Optimization Platform at Harness.
+- company:
     name: Walmart Labs
     url: "https://www.walmart.com"
     location: Bangalore
@@ -19,14 +30,18 @@ experiences:
   positions:
   - designation: Software Engineer - III
     start: July 2019
+    end: November 2021
     responsibilities:
     - Design and develop features as a part of the Edge team working on custom Software Defined LoadBalancer (SLB) written completely using Go.
-    - HTTP Log sampling of logs to the level of several TBs in real-time.
+    - Implemented HTTP Log sampling of logs to the level of several TBs in real-time which improved MTTR and MTTD with support for almost real-time debugging of applications.
     - Worked on a rate-limiting package.
+    - Worked from scratch on a Istio and Envoy based new gen traffic routing stack using Go.
+    - Revamped and thus improved the performance of a health checking engine which manages health info of several thousands of applications.
     - Service discovery using Consul.
+    - Developed an internal tool which tracks the health and improves visibility of various stack within the product.
+    - Won a hackathon with a POC of a project called Latency Tracker which has been promoted to a full time project with a PM attached to it.
+    - Worked on adding Prometheus and Grafana based monitoring and alerting as well as tracking GCP projects' metrics using Stackdriver based metrics gathering.
     - Bug fixes and APIs.
-    - Internal tool which tracks the health and improves visibility of various stack within the product.
-    - Won a hackathon with a POC of a project called Latency Tracker.
 
 - company:
     name: Cisco Systems
