@@ -1,4 +1,4 @@
-baseURL: http://sandeepbhat.co.in/
+baseURL: https://sandeepbhat.co.in/
 languageCode: en-us
 title: "Sandeep Bhat | Golang | Cloud | Harness"
 theme: "toha"
@@ -25,13 +25,13 @@ enableEmoji: true
 # Custom parameters
 params:
   # copyright
-  copyright: © 2020 Copyright.
+  copyright: © 2022 Copyright.
 
   # background image of the landing page
   background: "nasa-background.jpg"
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
+  gitRepo: https://github.com/sandyydk/Portfolio
 
   # specify whether you want to write blog post or not
   enableBlogPost: false
