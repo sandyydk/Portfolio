@@ -1,0 +1,56 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: EC2Sync (Easy-2-Sync)
+  # logo: images/projects/kubernetes.png
+  role: Developer
+  timeline: "April 2018 - Present"
+  repo: https://github.com/sandyydk/Ec2Sync
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: AWS Lambda to sync files from a S3 bucket to a target VM automatically.
+  tags: ["professional", "kubernetes", "cloud"]
+
+- name: AWS Solutions Architect Exam Notes
+  # logo: images/projects/tensorflow.png
+  role: Developer
+  timeline: "Feb 2018 - Present"
+  repo: https://github.com/sandyydk/AWS_Solutions_Architect_Associate_2018
+  #url: ""
+  summary: Notes to prepare for AWS Solutions Architect Certification.
+  tags: ["professional", "aws","academic"]
+
+- name: Go Recipes
+  role: Developer
+  timeline: "Mar 2018 - Present"
+  repo: "https://github.com/sandyydk/GoRecipesRepo"
+  summary: POC for a product which can be a Zomato for all recipes.
+  tags: ["hobby","go"]
+
+- name: LanLink
+  # logo: images/projects/no-code.png
+  role: Contributor
+  timeline: "Mar 2015 - Jun 2015"
+  repo: https://github.com/sandyydk/LanLink
+  #url: ""
+  summary: Product written in Python which connects all systems within a LAN(local network of a college for example) and let's them communicate over text and audio.
+  tags: ["hobby", "fun", "college"]

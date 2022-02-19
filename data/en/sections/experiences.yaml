@@ -1,0 +1,114 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Harness
+    url: "https://harness.io"
+    location: Bangalore
+    # company overview
+    overview: Harness is the industry’s first Software Delivery Platform to use AI to simplify your DevOps processes - CI, CD, Feature Flags, Cloud Costs, and much more.
+  positions:
+  - designation: Senior Software Engineer
+    start: December 2021
+    responsibilities:
+    - Part of Cost Optimization Platform at Harness.
+- company:
+    name: Walmart Labs
+    url: "https://www.walmart.com"
+    location: Bangalore
+    # company overview
+    overview: E-commerce giant in the US with branches all over the world and being placed at the top of the list of companies at Fortune magazine. Cutting edge company with 
+     traffic to the level of 44k/min OPM (orders per min) during the holiday sales (Black Friday - Cyber Monday sales) of 2019-20.
+  positions:
+  - designation: Software Engineer - III
+    start: July 2019
+    end: November 2021
+    responsibilities:
+    - Design and develop features as a part of the Edge team working on custom Software Defined LoadBalancer (SLB) written completely using Go.
+    - Implemented HTTP Log sampling of logs to the level of several TBs in real-time which improved MTTR and MTTD with support for almost real-time debugging of applications.
+    - Worked on a rate-limiting package.
+    - Worked from scratch on a Istio and Envoy based new gen traffic routing stack using Go.
+    - Revamped and thus improved the performance of a health checking engine which manages health info of several thousands of applications.
+    - Service discovery using Consul.
+    - Developed an internal tool which tracks the health and improves visibility of various stack within the product.
+    - Won a hackathon with a POC of a project called Latency Tracker which has been promoted to a full time project with a PM attached to it.
+    - Worked on adding Prometheus and Grafana based monitoring and alerting as well as tracking GCP projects' metrics using Stackdriver based metrics gathering.
+    - Bug fixes and APIs.
+
+- company:
+    name: Cisco Systems
+    url: "https://www.cisco.com/c/en_in/index.html"
+    location: Bangalore
+    overview: Networking giant and a reputed company.
+  positions:
+  - designation: Software Engineer - III
+    start: May 2018
+    end: July 2019
+    responsibilities:
+    - Designed and implemented a service for scheduling and managing various tasks in the system. It allowed for ensuring that the Kubernetes cluster was not overloaded as well as ensuring tasks that failed are tracked for.
+    - Designed and implemented a service for tracking all the inventory in the multiple cloud accounts added as part of the system. It tracks and maintains their relationships within the system as well their lifecycles and pricing etc.
+    - Was also involved in the discovery and implementation of Kubernetes within the product.
+    - Worked on APIs across the system (CRUD activities in the system).
+
+- company:
+    name: Cisco Systems
+    url: "https://www.cisco.com/c/en_in/index.html"
+    location: Bangalore
+    overview: Networking giant and a reputed company.
+  positions:
+  - designation: Software Engineer - II
+    start: Jan 2018
+    end: Apr 2018
+    responsibilities:
+    - Begin work on CloudCenter suite of products - majorly on Cisco Cost Optimizer.
+
+- company:
+    name: Cmpute.io (Acquired by Cisco)
+    url: "https://www.linkedin.com/company/47line-technologies/"
+    location: Bangalore
+    overview: Startup focussed on cost savings over AWS.
+  positions:
+  - designation: Software Developer
+    start: Jan 2017
+    end: Dec 2017
+    responsibilities:
+    - Developed the frontend UI single-handedly from scratch (Angular 2 with TypeScript) alongside APIs (C#, Linq as ORM).
+    - Also worked on Golang modules around notification system.
+
+- company:
+    name: Hewlett Packard Enterprise Systems
+    url: "https://www.hpe.com/in/en/home.html"
+    location: Bangalore
+    overview: Legendary company which set the base for the current Silicon Valley.
+  positions:
+  - designation: Research & Development Engineer
+    start: Jan 2018
+    end: Apr 2018
+    responsibilities:
+    - Virtual Connect is a switch-like device which is a part of a blade server environment which
+      virtualizes NICs in a server while enabling easy provisioning of servers along with the reduction in
+      cabling complexity.
+    - Built Audit Logging feature which uses the rsyslog of linux kernel to effectively log all
+      important events in the system along with support for logging on system bootup.
+      
+- company:
+    name: Sonus Networks (Ribbon Communications)
+    url: "https://ribboncommunications.com/"
+    location: Bangalore
+    overview: Ribbon Communications delivers communications software, IP and optical networking solutions to service providers, enterprises and critical infrastructure sectors globally. 
+  positions:
+  - designation: Software Development Intern
+    start: Jan 2014
+    end: Apr 2014
+    responsibilities:
+    - Created a FSM Call Flow Diagram by analyzing SBC Debug Logs to help understand complex
+      FSM of different modules running on the SBX system and easily identify the point of failure.
