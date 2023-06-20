@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Senior Software Engineer
+designation: Staff Software Engineer
 # your company information
 company:
   name: Harness
@@ -18,8 +18,8 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with over 6 years of experience working technologies across cloud and K8s. 
-Been part of a startup which was acquired by Cisco (Cmpute.io) as well as a team which built platform that handles traffic to the scale of several million flows per minute at Walmart supporting successful holidays across 2019-2021. '
+summary: 'I am a passionate software engineer with over 7 years of experience working technologies across multi-cloud (GCP, AWS and Azure), k8s, Envoy and distributed systems.
+Was part of a startup which was acquired by Cisco (Cmpute.io) as well as a team which built platform that handles traffic to the scale of several million flows per minute at Walmart supporting successful holidays across 2019-2021. '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

@@ -17,10 +17,17 @@ experiences:
     # company overview
     overview: Harness is the industry’s first Software Delivery Platform to use AI to simplify your DevOps processes - CI, CD, Feature Flags, Cloud Costs, and much more.
   positions:
-  - designation: Senior Software Engineer
-    start: December 2021
+  - designation: Staff Software Engineer
+    start: May 2023
     responsibilities:
-    - Part of Cost Optimization Platform at Harness.
+    - Taking up more responibilities across CCM in Harness.
+  - designation: Senior Software Engineer - II
+    start: December 2021
+    end: May 2023
+    responsibilities:
+    - Responsible for developing a custom loadbalancer using Envoy and operationalizing it across GCP, AWS and Azure. Saved several thousands in hard dollars for the customers.
+    - Part of the team working on Cloud Governance with scalability wired into the product from scratch.
+    - Developed Commitment Orchestrator from scratch.
 - company:
     name: Walmart Labs
     url: "https://www.walmart.com"
