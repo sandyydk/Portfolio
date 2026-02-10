@@ -1227,6 +1227,16 @@ img {
   min-height: 120px;
 }
 
+/* Hidden field for Netlify honeypot */
+.hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
 /* ===== Footer ===== */
 .footer {
   padding: 40px 0;

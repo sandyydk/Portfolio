@@ -590,18 +590,24 @@
             <a href="https://twitter.com/" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-        <form class="contact-form" data-animate="fade-left" id="contact-form">
+        <form class="contact-form" data-animate="fade-left" id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <!-- Hidden fields for Netlify -->
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          
           <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
           </div>
           <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
           </div>
           <div class="form-group">
-            <input type="text" id="subject" placeholder="Subject" />
+            <input type="text" id="subject" name="subject" placeholder="Subject" />
           </div>
           <div class="form-group">
-            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">
             <span>Send Message</span>

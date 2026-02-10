@@ -226,20 +226,52 @@ filterBtns.forEach((btn) => {
 // ===== Contact Form =====
 const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener("submit", (e) => {
+contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const btn = contactForm.querySelector("button[type='submit']");
   const originalHTML = btn.innerHTML;
+  
+  // Show loading state
+  btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+  btn.disabled = true;
 
-  btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
-  btn.style.background = "linear-gradient(135deg, #22c55e, #16a34a)";
+  try {
+    // Submit form data to Netlify
+    const formData = new FormData(contactForm);
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    });
 
-  setTimeout(() => {
-    btn.innerHTML = originalHTML;
-    btn.style.background = "";
-    contactForm.reset();
-  }, 3000);
+    if (response.ok) {
+      // Success feedback
+      btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
+      btn.style.background = "linear-gradient(135deg, #22c55e, #16a34a)";
+      contactForm.reset();
+      
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = "";
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      throw new Error("Form submission failed");
+    }
+  } catch (error) {
+    // Error feedback
+    btn.innerHTML = '<span>Failed to Send</span> <i class="fas fa-times"></i>';
+    btn.style.background = "linear-gradient(135deg, #ef4444, #dc2626)";
+    
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.background = "";
+      btn.disabled = false;
+    }, 3000);
+    
+    console.error("Form submission error:", error);
+  }
 });
 
 // ===== Fade In Up Animation Keyframes =====
