@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Bhat | Staff Software Engineer - II</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-animate="fade-up">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+          Hi, I'm <span class="gradient-text">Sandeep Bhat</span>
+        </h1>
+        <div class="hero-subtitle-wrapper" data-animate="fade-up" data-delay="200">
+          <p class="hero-subtitle">
+            <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span>
+          </p>
+        </div>
+        <p class="hero-description" data-animate="fade-up" data-delay="300">
+          Staff Software Engineer - II building high-scale distributed systems with Go, 
+          Kubernetes, and multi-cloud platforms. Conference speaker at GopherCon &amp; IndiaFOSS.
+        </p>
+        <div class="hero-actions" data-animate="fade-up" data-delay="400">
+          <a href="#experience" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats" data-animate="fade-up" data-delay="500">
+          <div class="stat">
+            <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Cloud Platforms</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left" data-delay="300">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="code-title">main.go</span>
+          </div>
+          <pre class="code-body"><code><span class="code-keyword">package</span> main
+
+<span class="code-keyword">import</span> <span class="code-string">"fmt"</span>
+
+<span class="code-keyword">type</span> <span class="code-type">Engineer</span> <span class="code-keyword">struct</span> {
+    Name     <span class="code-type">string</span>
+    Role     <span class="code-type">string</span>
+    Skills   []<span class="code-type">string</span>
+    Passion  <span class="code-type">string</span>
+}
+
+<span class="code-keyword">func</span> main() {
+    me := <span class="code-type">Engineer</span>{
+        Name:    <span class="code-string">"Sandeep Bhat"</span>,
+        Role:    <span class="code-string">"Staff SWE II"</span>,
+        Skills:  []<span class="code-type">string</span>{
+            <span class="code-string">"Go"</span>, <span class="code-string">"K8s"</span>,
+            <span class="code-string">"Cloud"</span>, <span class="code-string">"Envoy"</span>,
+        },
+        Passion: <span class="code-string">"Building at scale"</span>,
+    }
+    fmt.Println(me)
+}</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passionate about building <span class="gradient-text">scalable systems</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-content" data-animate="fade-right">
+          <p class="about-text">
+            I am a passionate software engineer with over <strong>7 years of experience</strong> working 
+            with technologies across multi-cloud (GCP, AWS and Azure), Kubernetes, Envoy and distributed systems.
+          </p>
+          <p class="about-text">
+            Was part of a startup which was <strong>acquired by Cisco</strong> (Cmpute.io) as well as a team 
+            which built a platform that handles traffic to the scale of <strong>several million flows per minute</strong> 
+            at Walmart, supporting successful holiday seasons across 2019-2021.
+          </p>
+          <p class="about-text">
+            I give talks at tech conferences like <strong>GopherCon</strong> and <strong>IndiaFOSS</strong>, 
+            and love working on cutting-edge projects that push the boundaries of scale and performance.
+          </p>
+          <div class="about-tags">
+            <span class="tag"><i class="fas fa-code"></i> Golang</span>
+            <span class="tag"><i class="fas fa-server"></i> Microservices</span>
+            <span class="tag"><i class="fas fa-cloud"></i> Cloud</span>
+            <span class="tag"><i class="fas fa-comments"></i> Communication</span>
+            <span class="tag"><i class="fas fa-bolt"></i> Fast Learner</span>
+            <span class="tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+          </div>
+        </div>
+        <div class="about-cards" data-animate="fade-left">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-building"></i></div>
+            <div>
+              <h4>Currently at</h4>
+              <p>Harness &mdash; Staff Software Engineer - II</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Based in</h4>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-microphone"></i></div>
+            <div>
+              <h4>Speaker at</h4>
+              <p>GopherCon, IndiaFOSS</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-certificate"></i></div>
+            <div>
+              <h4>Certified</h4>
+              <p>Azure Fundamentals (AZ-900)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Skills & Expertise</span>
+        <h2 class="section-title">Technologies I <span class="gradient-text">work with</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-animate="fade-up" data-delay="0">
+          <div class="skill-icon">
+            <i class="fab fa-golang"></i>
+          </div>
+          <h3>Go Development</h3>
+          <p>Primary language for professional development. Building scalable, testable, and maintainable systems for over 3+ years, with two major projects built from scratch.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-card" data-animate="fade-up" data-delay="100">
+          <div class="skill-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud Computing</h3>
+          <p>Hands-on experience with GCP, AWS, and Azure. Active work on Azure VMs, Autoscaling, Azure Blob Storage, and multi-cloud architectures.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card" data-animate="fade-up" data-delay="200">
+          <div class="skill-icon">
+            <i class="fab fa-docker"></i>
+          </div>
+          <h3>Docker</h3>
+          <p>Writing dockerized container programs with experience in multi-stage, multi-arch build processes for production-ready deployments.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card" data-animate="fade-up" data-delay="300">
+          <div class="skill-icon">
+            <i class="fas fa-dharmachakra"></i>
+          </div>
+          <h3>Kubernetes</h3>
+          <p>Working with K8s using Helm for template management. Intermediate to advanced skills in container orchestration and deployment strategies.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card" data-animate="fade-up" data-delay="400">
+          <div class="skill-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Prometheus & Grafana</h3>
+          <p>Setup, configuration, and custom dashboards. Experienced with PromQL and Grafana with Prometheus as the data source for observability.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-card" data-animate="fade-up" data-delay="500">
+          <div class="skill-icon">
+            <i class="fab fa-linux"></i>
+          </div>
+          <h3>Linux</h3>
+          <p>Primary operating system. Capable of writing bash/shell scripts and comfortable with Linux-based infrastructure management.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <!-- Harness -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Harness</h3>
+                <p class="timeline-role">Staff Software Engineer - II</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> September 2025 &ndash; Present &bull; Bangalore</span>
+              </div>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <ul class="timeline-list">
+        
+              <li>Leading Commitment Orchestrator (CO) team at Harness handling aspects of scale and forecasting using a mix of Prophet and agentic interactions</li>
+              <li>Leading Harness CCM AI initiatives simplifying feature adoption making it easier to adopt them using AI</li>
+            </ul>
+            <div class="timeline-sub">
+              <p class="timeline-role">Staff Software Engineer</p>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2023 &ndash; September 2025</span>
+              <ul class="timeline-list">
+                <li>Taking up more responsibilities across CCM in Harness</li>
+                <li>Leading the effort in multiple features around cloud cost optimisation involving multi cloud providers like AWS, GCP and Azure</li>
+                <li>Actively participated in recruitment activities for 3 years and 2 years in campus recruitments resulting in hiring of successful engineers and graduates</li>
+              </ul>
+            </div>
+            <div class="timeline-sub">
+              <p class="timeline-role">Senior Software Engineer - II</p>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> December 2021 &ndash; May 2023</span>
+              <ul class="timeline-list">
+                <li>Developed a custom load balancer using Envoy, operationalized across GCP, AWS and Azure &mdash; saving thousands in hard dollars for customers</li>
+                <li>Worked on Cloud Governance with scalability wired into the product from scratch</li>
+                <li>Developed Commitment Orchestrator from scratch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Walmart -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Walmart Labs</h3>
+                <p class="timeline-role">Software Engineer III</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> July 2019 &ndash; November 2021 &bull; Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Designed and developed features for custom Software Defined LoadBalancer (SLB) written entirely in Go</li>
+              <li>Implemented HTTP Log sampling handling several TBs in real-time, improving MTTR and MTTD</li>
+              <li>Built Istio and Envoy-based next-gen traffic routing stack from scratch</li>
+              <li>Revamped health checking engine managing several thousands of applications</li>
+              <li>Supported 44K+ orders/min during Black Friday &ndash; Cyber Monday holiday sales</li>
+              <li>Won hackathon with Latency Tracker POC &mdash; promoted to full-time project</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cisco -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Cisco Systems</h3>
+                <p class="timeline-role">Software Engineer II &rarr; III</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2018 &ndash; July 2019 &bull; Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Designed scheduling and task management service for Kubernetes cluster load balancing</li>
+              <li>Built multi-cloud inventory tracking service with relationship mapping and lifecycle management</li>
+              <li>Drove Kubernetes adoption within the product</li>
+              <li>Worked on CloudCenter suite &mdash; Cisco Cost Optimizer</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cmpute.io -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Cmpute.io <span class="acquired-badge">Acquired by Cisco</span></h3>
+                <p class="timeline-role">Software Developer</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2017 &ndash; Dec 2017 &bull; Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed frontend UI single-handedly from scratch (Angular 2 + TypeScript) alongside APIs (C#, LINQ)</li>
+              <li>Worked on Golang notification system modules</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HPE -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Hewlett Packard Enterprise</h3>
+                <p class="timeline-role">R&D Engineer</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Earlier &bull; Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Worked on Virtual Connect &mdash; a switch device virtualizing NICs in blade server environments</li>
+              <li>Built Audit Logging feature using Linux rsyslog kernel for event logging and boot-time support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">IIT Delhi</h3>
+                <p class="timeline-role">Continuous Education Program (CEP) &mdash; Generative AI</p>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2025</span>
+              </div>
+              <span class="timeline-badge">CEP</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Completed IIT Delhi's CEP on Generative AI, delving deep into Machine Learning and Neural Networks</li>
+              <li>Capstone project: Trained a model on a <a href="https://huggingface.co/datasets/Aswini123/IntentCONANv2" target="_blank" class="inline-link">HuggingFace dataset</a> to counter hate speech with counter speech</li>
+              <li>Gained hands-on experience with transformer architectures, fine-tuning, and modern NLP techniques</li>
+            </ul>
+            <!-- Add images: <div class="gallery-strip">
+              <a href="images/iitd-cert.jpg" class="gallery-thumb" data-lightbox>
+                <img src="images/iitd-cert.jpg" alt="IIT Delhi CEP Certificate">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Milestones</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card" data-animate="fade-up" data-delay="0">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Hackathon Winner &mdash; Walmart Labs</h3>
+          <p>Won the hackathon at Walmart Labs with a POC of Latency Tracker, which was later promoted to a full-time project with a dedicated PM.</p>
+          <!-- Add image: <div class="gallery-strip">
+            <a href="images/hackathon.jpg" class="gallery-thumb" data-lightbox>
+              <img src="images/hackathon.jpg" alt="Walmart Hackathon">
+              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </a>
+          </div> -->
+        </div>
+        <div class="achievement-card" data-animate="fade-up" data-delay="100">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Azure Fundamentals Certified</h3>
+          <p>Microsoft Azure AZ-900 certification demonstrating foundational knowledge of cloud services and Azure platform.</p>
+          <!-- Add image: <div class="gallery-strip">
+            <a href="images/azure-cert.jpg" class="gallery-thumb" data-lightbox>
+              <img src="images/azure-cert.jpg" alt="Azure AZ-900 Certificate">
+              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </a>
+          </div> -->
+        </div>
+        <div class="achievement-card" data-animate="fade-up" data-delay="200">
+          <div class="achievement-icon"><i class="fas fa-microphone-alt"></i></div>
+          <h3>Conference Speaker</h3>
+          <p>Delivered technical talks at prestigious conferences including GopherCon and IndiaFOSS, sharing knowledge on Go and open-source.</p>
+          <!-- Add image: <div class="gallery-strip">
+            <a href="images/conference.jpg" class="gallery-thumb" data-lightbox>
+              <img src="images/conference.jpg" alt="Conference Talk">
+              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </a>
+          </div> -->
+        </div>
+        <div class="achievement-card" data-animate="fade-up" data-delay="300">
+          <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Startup to Acquisition</h3>
+          <p>Part of Cmpute.io from early stage through its acquisition by Cisco, contributing to the core product that drove the deal.</p>
+          <!-- Add image: <div class="gallery-strip">
+            <a href="images/cmpute.jpg" class="gallery-thumb" data-lightbox>
+              <img src="images/cmpute.jpg" alt="Cmpute.io">
+              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-filter" data-animate="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+        <button class="filter-btn" data-filter="hobby">Hobby</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="professional" data-animate="fade-up" data-delay="0">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-sync-alt"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">EC2Sync (Easy-2-Sync)</h3>
+          <p class="project-desc">AWS Lambda function to automatically sync files from an S3 bucket to a target VM. Streamlines deployment and file management workflows.</p>
+          <div class="project-tags">
+            <span>AWS Lambda</span>
+            <span>S3</span>
+            <span>Kubernetes</span>
+            <span>Cloud</span>
+          </div>
+        </div>
+        <div class="project-card" data-category="professional" data-animate="fade-up" data-delay="100">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-book"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AWS Solutions Architect Notes</h3>
+          <p class="project-desc">Comprehensive study notes and resources for preparing for the AWS Solutions Architect Certification exam.</p>
+          <div class="project-tags">
+            <span>AWS</span>
+            <span>Certification</span>
+            <span>Cloud Architecture</span>
+          </div>
+        </div>
+        <div class="project-card" data-category="hobby" data-animate="fade-up" data-delay="200">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-utensils"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Go Recipes</h3>
+          <p class="project-desc">A proof-of-concept product built in Go &mdash; think Zomato for all recipes. Exploring Go's capabilities in web application development.</p>
+          <div class="project-tags">
+            <span>Go</span>
+            <span>Web App</span>
+            <span>REST API</span>
+          </div>
+        </div>
+        <div class="project-card" data-category="hobby" data-animate="fade-up" data-delay="300">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">LanLink</h3>
+          <p class="project-desc">Python-based product connecting all systems within a LAN, enabling text and audio communication across local networks.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Networking</span>
+            <span>Audio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's build something <span class="gradient-text">amazing together</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to connect? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:sandyethadka@gmail.com">sandyethadka@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" data-animate="fade-left" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket"> /&gt;</span>
+        </a>
+        <p class="footer-text">Designed & Built by Sandeep Bhat &copy; 2026</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
