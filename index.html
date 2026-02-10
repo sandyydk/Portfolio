@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sandeep Bhat | Staff Software Engineer - II</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -25,6 +25,7 @@
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#achievements" class="nav-link">Achievements</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#talks" class="nav-link">Talks</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <a href="#contact" class="nav-cta">Let's Talk</a>
@@ -52,7 +53,7 @@
         </div>
         <p class="hero-description" data-animate="fade-up" data-delay="300">
           Staff Software Engineer - II building high-scale distributed systems with Go, 
-          Kubernetes, and multi-cloud platforms. Conference speaker at GopherCon &amp; IndiaFOSS.
+          Kubernetes, and multi-cloud platforms. Conference speaker at GopherCon &amp; IndiaFOSS &amp; Conf42.
         </p>
         <div class="hero-actions" data-animate="fade-up" data-delay="400">
           <a href="#experience" class="btn btn-primary">
@@ -143,7 +144,7 @@
             at Walmart, supporting successful holiday seasons across 2019-2021.
           </p>
           <p class="about-text">
-            I give talks at tech conferences like <strong>GopherCon</strong> and <strong>IndiaFOSS</strong>, 
+            I give talks at tech conferences like <strong><a href="https://www.youtube.com/watch?v=sfowbvizJ3o" target="_blank" rel="noopener noreferrer" class="inline-link">GopherCon</a></strong>, <strong><a href="https://www.youtube.com/watch?v=TCGsSSHPYUw" target="_blank" rel="noopener noreferrer" class="inline-link">Conf42</a></strong> and <strong><a href="https://www.youtube.com/watch?v=ehH6dZMTwSY" target="_blank" rel="noopener noreferrer" class="inline-link">IndiaFOSS</a></strong>, 
             and love working on cutting-edge projects that push the boundaries of scale and performance.
           </p>
           <div class="about-tags">
@@ -174,14 +175,14 @@
             <div class="info-card-icon"><i class="fas fa-microphone"></i></div>
             <div>
               <h4>Speaker at</h4>
-              <p>GopherCon, IndiaFOSS</p>
+              <p>GopherCon, IndiaFOSS, Conf42</p>
             </div>
           </div>
           <div class="info-card">
-            <div class="info-card-icon"><i class="fas fa-certificate"></i></div>
+            <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
             <div>
-              <h4>Certified</h4>
-              <p>Azure Fundamentals (AZ-900)</p>
+              <h4>Education</h4>
+              <p>IIT Delhi CEP - Generative AI</p>
             </div>
           </div>
         </div>
@@ -455,13 +456,18 @@
         <div class="achievement-card" data-animate="fade-up" data-delay="200">
           <div class="achievement-icon"><i class="fas fa-microphone-alt"></i></div>
           <h3>Conference Speaker</h3>
-          <p>Delivered technical talks at prestigious conferences including GopherCon and IndiaFOSS, sharing knowledge on Go and open-source.</p>
-          <!-- Add image: <div class="gallery-strip">
-            <a href="images/conference.jpg" class="gallery-thumb" data-lightbox>
-              <img src="images/conference.jpg" alt="Conference Talk">
-              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <p>Delivered technical talks at prestigious conferences, sharing knowledge on Go, cloud infrastructure, and open-source technologies.</p>
+          <div class="talk-links">
+            <a href="https://www.youtube.com/watch?v=sfowbvizJ3o" target="_blank" rel="noopener noreferrer" class="talk-link">
+              <i class="fab fa-youtube"></i> GopherCon Talk
             </a>
-          </div> -->
+            <a href="https://www.youtube.com/watch?v=ehH6dZMTwSY" target="_blank" rel="noopener noreferrer" class="talk-link">
+              <i class="fab fa-youtube"></i> IndiaFOSS Talk
+            </a>
+            <a href="https://www.youtube.com/watch?v=TCGsSSHPYUw" target="_blank" rel="noopener noreferrer" class="talk-link">
+              <i class="fab fa-youtube"></i> Conf42 Talk
+            </a>
+          </div>
         </div>
         <div class="achievement-card" data-animate="fade-up" data-delay="300">
           <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
@@ -556,6 +562,64 @@
     </div>
   </section>
 
+  <!-- Conference Talks Section -->
+  <section class="section" id="talks">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Conference Talks</span>
+        <h2 class="section-title">Sharing knowledge with the <span class="gradient-text">community</span></h2>
+        <p class="section-subtitle">Watch my talks on Go, Cloud Infrastructure, and Distributed Systems</p>
+      </div>
+      <div class="talks-grid">
+        <a href="https://www.youtube.com/watch?v=sfowbvizJ3o" target="_blank" rel="noopener noreferrer" class="talk-video-card" data-animate="fade-up" data-delay="0">
+          <div class="talk-thumbnail">
+            <img src="https://img.youtube.com/vi/sfowbvizJ3o/sddefault.jpg" alt="GopherCon Talk" onerror="this.src='https://img.youtube.com/vi/sfowbvizJ3o/hqdefault.jpg'" />
+            <span class="talk-duration">30:45</span>
+            <div class="play-overlay">
+              <i class="fab fa-youtube"></i>
+              <span>Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="talk-info">
+            <h3>Scheduled Job Executions in Go</h3>
+            <span class="talk-conference"><i class="fas fa-microphone-alt"></i> GopherCon India 2023</span>
+            <p>Building robust scheduled job execution systems with Go - practical examples and best practices for distributed systems</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ehH6dZMTwSY" target="_blank" rel="noopener noreferrer" class="talk-video-card" data-animate="fade-up" data-delay="100">
+          <div class="talk-thumbnail">
+            <img src="https://img.youtube.com/vi/ehH6dZMTwSY/sddefault.jpg" alt="IndiaFOSS Talk" onerror="this.src='https://img.youtube.com/vi/ehH6dZMTwSY/hqdefault.jpg'" />
+            <span class="talk-duration">42:18</span>
+            <div class="play-overlay">
+              <i class="fab fa-youtube"></i>
+              <span>Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="talk-info">
+            <h3>Developing a Custom Load Balancer to serve traffic at scale</h3>
+            <span class="talk-conference"><i class="fas fa-microphone-alt"></i> IndiaFOSS</span>
+            <p>Building custom load balancing solutions for high-traffic workloads and distributed systems architecture</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=TCGsSSHPYUw" target="_blank" rel="noopener noreferrer" class="talk-video-card" data-animate="fade-up" data-delay="200">
+          <div class="talk-thumbnail">
+            <img src="https://img.youtube.com/vi/TCGsSSHPYUw/sddefault.jpg" alt="Conf42 Talk" onerror="this.src='https://img.youtube.com/vi/TCGsSSHPYUw/hqdefault.jpg'" />
+            <span class="talk-duration">25:32</span>
+            <div class="play-overlay">
+              <i class="fab fa-youtube"></i>
+              <span>Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="talk-info">
+            <h3>Developing Custom Load Balancer using Envoy</h3>
+            <span class="talk-conference"><i class="fas fa-microphone-alt"></i> Conf42</span>
+            <p>Building and deploying custom load balancers using Envoy proxy for high-performance traffic management at scale</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="section section-alt" id="contact">
     <div class="container">
@@ -621,6 +685,7 @@
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
+          <a href="#talks">Talks</a>
         </div>
       </div>
     </div>
